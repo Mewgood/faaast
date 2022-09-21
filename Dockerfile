@@ -80,6 +80,8 @@ COPY faast.readme.txt /home
 
 RUN chmod 777 /home/faast.readme.txt
 
+EXPOSE 17881
+
 WORKDIR /home
 
 VOLUME ["/.gems", "/.npm", "/.composer", "/usr/local/share/.cache/yarn/v1", "/.drush/cache/download"]
